@@ -1,0 +1,52 @@
+.title {
+  background-color: var(--excel-green);
+  color: white;
+  height: 74vh;
+  width: 100%;
+  grid-template-columns: calc(500px + ((100% - 500px) / 3)) calc(
+      100% - (500px + ((100% - 500px) / 3))
+    );
+}
+
+.title h1 {
+  padding: 3rem;
+  border-bottom: 2px solid var(--excel-dark-green);
+  font-size: 6.1rem;
+  line-height: 6.2rem;
+}
+
+.about-us {
+  position: relative;
+  border: 2px solid var(--excel-dark-green);
+  border-top: 0;
+  border-right: 0;
+}
+
+.about-us:hover img {
+  transform: rotate(25deg);
+}
+
+.about-us:hover .about-us-container {
+  bottom: 4.5rem;
+}
+
+.about-us-container {
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  transition: 0.4s ease-in-out;
+}
+
+.about-us img {
+  margin-bottom: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  max-width: 400px;
+}
+
+.about-us h2 > span {
+  padding-bottom: 10px;
+}

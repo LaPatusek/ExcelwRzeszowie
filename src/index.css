@@ -1,3 +1,15 @@
+@import './css-reset.css';
+
+:root {
+  --excel-green: #1b7444;
+  --excel-dark-green: #185c37;
+  --excel-light-green: #21a366;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +22,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
 }

@@ -1,0 +1,51 @@
+.navbar {
+  grid-template-columns: 500px calc(100% - 500px);
+  column-count: 2;
+  background-color: var(--excel-green);
+}
+
+.navbar-800 {
+  display: none;
+}
+
+.logo {
+  border: 2px solid var(--excel-dark-green);
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+}
+
+.logo a {
+  padding: 2rem 1rem;
+  justify-self: center;
+}
+
+.nav {
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid var(--excel-dark-green);
+  border-top: 0;
+  border-right: 0;
+}
+
+.navlink-wrap {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.nav-link {
+  position: relative;
+  justify-self: center;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-size: 26px;
+}
+
+.contact {
+  text-align: center;
+  line-height: 28px;
+  border-left: 2px solid var(--excel-dark-green);
+}
