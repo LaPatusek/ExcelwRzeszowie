@@ -1,6 +1,114 @@
 .footer {
-    width: 100%;
-    padding: 3rem 5rem;
-    background-color: var(--excel-dark-green);
-    color: white;
+  width: 100%;
+  background-color: var(--excel-dark-green);
+  color: white;
+}
+
+.upper-footer {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wrap {
+  padding: 2rem 4rem;
+  display: grid;
+  border: 2px solid var(--excel-green);
+  border-left: 1px solid var(--excel-green);
+}
+
+.kontakt {
+  justify-self: center;
+}
+
+.kontakt h3,
+.strony h3,
+.socials h3 {
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+}
+
+.kontakt svg {
+  margin-right: 0.6em;
+  transform: translateY(6px);
+}
+
+.kontakt p {
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.strony svg {
+  transform: translateY(3px);
+  margin-right: 0.5em;
+}
+
+.strony a {
+  width: fit-content;
+  position: relative;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.strony a:hover {
+  color: #73e2a7;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icons-container {
+  position: relative;
+  grid-template-columns: repeat(2, 60px);
+  justify-self: center;
+}
+
+.icons-container svg {
+  justify-self: center;
+  align-self: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.facebook {
+  border-top-left-radius: 25px;
+  transform: translateY(5px);
+}
+
+.instagram {
+  border-top-right-radius: 25px;
+  transform: translateX(-2px) translateY(5px);
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.twitter {
+  border-bottom-left-radius: 25px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.linkedin {
+  border-bottom-right-radius: 25px;
+  transform: translateY(2px);
+}
+
+.icons-container svg:hover {
+  background-color: var(--excel-light-green);
+}
+
+.down-footer {
+  padding: 1rem 5rem;
+  font-size: 18px;
+}
+
+.down-footer > .icon {
+  transform: translateY(2px);
+}
+
+.down-footer a {
+  color: var(--white-font);
+  text-decoration: underline;
 }
