@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={`${styles['upper-footer']} grid`}>
-        <div className={`${styles.wrap} grid`}>
-          <div className={`${styles.kontakt} grid`}>
+        <div className={` ${styles['first-wrap']} grid`}>
+          <div className={`${styles.kontakt}`}>
             <h3>Kontakt</h3>
             <p>
               <svg
@@ -25,15 +25,15 @@ const Footer = () => {
               >
                 <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
               </svg>
-              emailkontaktowy@gmail.com
+              <a href='asd'>emailkontaktowy@gmail.com </a>
             </p>
             <p>
               <Call size='26' variant='Bold' />
-              +48 000 000 000
+              <a href='asd'>+48 000 000 000 </a>
             </p>
           </div>
         </div>
-        <div className={`${styles.wrap} grid`}>
+        <div className={` ${styles['second-wrap']} grid`}>
           <div className={`${styles.strony} grid`}>
             <h3>Strony </h3>
             <Link to='/main'>
@@ -53,17 +53,21 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={`${styles.wrap} grid`}>
+        <div className={` ${styles['third-wrap']} grid`}>
           <div className={`${styles.socials} grid`}>
             <h3>Obserwuj nas na bieżąco</h3>
 
             <div className={`${styles['icons-container']} grid`}>
               <a href='asd' aria-label='Facebook' target='_blank'>
-                <Facebook size='34' color='white' className={styles.facebook}/>
+                <Facebook size='34' color='white' className={styles.facebook} />
               </a>
 
               <a href='asd' aria-label='Instagram' target='_blank'>
-                <Instagram size='34' color='white' className={styles.instagram}/>
+                <Instagram
+                  size='34'
+                  color='white'
+                  className={styles.instagram}
+                />
               </a>
 
               <a href='asd' aria-label='Twitter' target='_blank'>

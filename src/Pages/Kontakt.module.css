@@ -1,0 +1,211 @@
+.kontakt-info {
+  background-color: var(--excel-green);
+  padding: 3rem 5rem;
+}
+
+.kontakt-info h1 {
+  color: white;
+  width: fit-content;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 2px solid var(--excel-dark-green);
+  border-radius: 20px;
+}
+
+.kontakt-section {
+  grid-template-columns: 50% 50%;
+  padding-top: 50px;
+}
+
+.left-section,
+.right-section {
+  padding: 2rem 3rem;
+}
+
+.left-section {
+  margin-top: 76px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin-bottom: 20px;
+}
+
+.left-section h3 {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}
+
+.right-section h4 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  width: 90%;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border-bottom: 1px solid #515151;
+}
+
+.group > textarea {
+  resize: none;
+}
+
+.group > .input:focus {
+  outline: none;
+}
+
+.group > label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.group > .input:focus ~ label,
+.group > .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: var(--excel-light-green);
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 90%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--excel-light-green);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.group > .input:focus ~ .bar:before,
+.group > .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.group p {
+  position: absolute;
+  margin-top: 4px;
+  font-size: 14px;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 25px;
+  background-color: var(--excel-dark-green);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  z-index: 5;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: var(--excel-green);
+}
+
+.button-wrap {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px 30px 20px 30px;
+}
+
+.button-wrap::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  top: -0.3em;
+  border: 1px solid #0e1822;
+  border-bottom: 0px;
+  transition: all 0.4s;
+}
+
+.button-wrap:after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  bottom: -0.3em;
+  border: 1px solid #0e1822;
+  border-top: 0px;
+  transition: all 0.4s;
+}
+
+.button-wrap:hover::before,
+.button-wrap:hover::after {
+  height: 60%;
+}
+
+.mess-after-form {
+  text-align: center;
+  width: 90%;
+}
+
+.mess-after-form svg {
+  color: var(--excel-light-green);
+  margin-bottom: 5px;
+}
+
+.mess-after-form p {
+  font-size: 20px;
+  color: var(--excel-light-green);
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}

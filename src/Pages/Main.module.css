@@ -10,11 +10,16 @@
     );
 }
 
-.title h1 {
-  padding: 3rem;
-  user-select: none;
+.heading-container {
   z-index: 5;
+  padding: 3rem;
+  padding-left: 4rem;
   border-bottom: 2px solid var(--excel-dark-green);
+}
+
+.title h1 {
+  font-weight: bold;
+  user-select: none;
   font-size: 6.1rem;
   line-height: 6.8rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -174,6 +179,7 @@
 }
 
 .container h3 {
+  font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   font-size: 22px;
@@ -185,4 +191,72 @@
   font-size: 18px;
   line-height: 20px;
   z-index: 2;
+}
+
+.kontakt-section {
+  grid-template-columns: calc(100% - 650px) 650px;
+  background-color: var(--excel-green);
+}
+
+.kontakt-content {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
+
+.kontakt-content h2 {
+  font-size: 30px;
+  width: fit-content;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.kontakt-content h3 {
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kontakt-content a {
+  position: relative;
+  color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--excel-light-green);
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  overflow: hidden;
+}
+
+.kontakt-content a > span {
+  position: relative;
+  z-index: 2;
+}
+
+.kontakt-content a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -160px;
+  width: 100%;
+  height: 100%;
+  background: var(--excel-light-green);
+  transition: left 0.6s ease;
+}
+
+.kontakt-content a:hover::before {
+  left: 0;
+}
+
+.kontakt-section img {
+  transform: translateY(0px);
+  height: calc(100% + 2px);
 }

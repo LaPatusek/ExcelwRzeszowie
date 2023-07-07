@@ -8,11 +8,19 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.wrap {
+.first-wrap,
+.second-wrap,
+.third-wrap {
   padding: 2rem 4rem;
   display: grid;
   border: 2px solid var(--excel-green);
-  border-left: 1px solid var(--excel-green);
+  border-left: 2px solid var(--excel-green);
+}
+
+.first-wrap,
+.third-wrap {
+  border-left: 0;
+  border-right: 0;
 }
 
 .kontakt {
@@ -35,7 +43,13 @@
 
 .kontakt p {
   letter-spacing: 0.5px;
+  margin-bottom: 10px;
   font-size: 18px;
+}
+
+.kontakt a {
+  color: white;
+  text-decoration: underline;
 }
 
 .strony svg {

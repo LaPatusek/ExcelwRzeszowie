@@ -1,16 +1,31 @@
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'iconsax-react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import hello from '../Assets/hand-right-outline.svg';
+import szkolenie from '../Assets/szkolenie.jpg';
 import styles from './Main.module.css';
 
 const Main = () => {
+  const [animate, setAnimation] = useState(false);
+
+  useEffect(() => {
+    setAnimation(true);
+  }, []);
+
   return (
     <div className={styles.main}>
       <div className={`${styles.title} grid`}>
         <div className={styles['blur-circle-shape']} />
-        <h1>
-          Szkolenia Excel <br /> w Rzeszowie
-        </h1>
+        <div className={styles['heading-container']}>
+          <motion.h1
+            initial={{ opacity: 0, translateY: -200 }}
+            animate={animate ? { opacity: 1, translateY: 0 } : ''}
+            transition={{ duration: .7 }}
+          >
+            Szkolenia <br /> Excel <br /> w Rzeszowie
+          </motion.h1>
+        </div>
 
         <div className={`${styles['about-us']} grid`}>
           <div className={styles['about-us-container']}>
@@ -63,6 +78,17 @@ const Main = () => {
         </div>
       </div>
 
+      <section className={`${styles['kontakt-section']} grid`}>
+        <div className={styles['kontakt-content']}>
+          <h2>Skontaktuj się z nami już dziś</h2>
+          <h3>A my pomożemy Ci osiągnąć Twoje cele</h3>
+          <Link to='/kontakt'>
+            <span>Kontakt</span>
+          </Link>
+        </div>
+
+        <img src={szkolenie} alt='' width='100%' />
+      </section>
     </div>
   );
 };
