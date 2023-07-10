@@ -144,14 +144,14 @@
   content: '';
   width: 500px;
   height: 500px;
-  background: #b1cf5f;
+  background: var(--excel-light-green);
   transform: rotate(45deg);
   transition: all 0.6s ease-in;
 }
 
 .container:hover {
   color: black;
-  box-shadow: 5px 5px 10px 0 #b1cf5f;
+  box-shadow: 5px 5px 10px 0 #89D6D9;
 }
 
 .container:hover::before {
@@ -167,7 +167,7 @@
   content: '';
   width: 500px;
   height: 500px;
-  background: #b1cf5f;
+  background: #89D6D9;
   transform: rotate(45deg);
   transition: all 0.6s ease-in;
 }
