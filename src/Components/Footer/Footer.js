@@ -40,11 +40,11 @@ const Footer = () => {
               <ArrowRight size='20' />
               Strona główna
             </Link>
-            <Link to='/ofera'>
+            <Link to='/oferta'>
               <ArrowRight size='20' />
               Oferta
             </Link>
-            <Link to='/about-us'>
+            <Link to='/o-nas'>
               <ArrowRight size='20' />O nas
             </Link>
             <Link to='/kontakt'>

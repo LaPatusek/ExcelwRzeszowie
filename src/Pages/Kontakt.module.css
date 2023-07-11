@@ -312,8 +312,16 @@
     width: fit-content;
   }
 
+  .left-section {
+    width: 100%;
+  }
+
   .left-socials {
     margin-top: 50px;
+  }
+
+  .right-section{
+    width: 100vw;
   }
 
   .right-section h4,
