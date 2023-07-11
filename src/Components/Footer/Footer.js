@@ -1,5 +1,5 @@
 import {
-  ArrowRight3,
+  ArrowRight,
   Call,
   Copyright,
   Facebook,
@@ -37,18 +37,18 @@ const Footer = () => {
           <div className={`${styles.strony} grid`}>
             <h3>Strony </h3>
             <Link to='/main'>
-              <ArrowRight3 variant='Bold' size='20' />
+              <ArrowRight size='20' />
               Strona główna
             </Link>
             <Link to='/ofera'>
-              <ArrowRight3 variant='Bold' size='20' />
+              <ArrowRight size='20' />
               Oferta
             </Link>
             <Link to='/about-us'>
-              <ArrowRight3 variant='Bold' size='20' />O nas
+              <ArrowRight size='20' />O nas
             </Link>
             <Link to='/kontakt'>
-              <ArrowRight3 variant='Bold' size='20' />
+              <ArrowRight size='20' />
               Kontakt
             </Link>
           </div>

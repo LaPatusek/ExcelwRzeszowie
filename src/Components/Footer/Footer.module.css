@@ -53,8 +53,9 @@
 }
 
 .strony svg {
-  transform: translateY(3px);
+  transform: translateY(4px);
   margin-right: 0.5em;
+  transition: all 0.3s;
 }
 
 .strony a {
@@ -70,6 +71,11 @@
 .strony a:hover {
   color: #73e2a7;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.strony a:hover svg {
+  transform: rotate(-45deg) translateY(5px);
+  color: #73e2a7;
 }
 
 .icons-container {
@@ -125,4 +131,18 @@
 .down-footer a {
   color: var(--white-font);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 865px) {
+  .upper-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .second-wrap {
+    border: 0;
+  }
+
+  .strony {
+    justify-content: center;
+  }
 }

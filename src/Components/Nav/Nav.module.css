@@ -4,7 +4,7 @@
   background-color: var(--excel-green);
 }
 
-.navbar-800 {
+.nav-800 {
   display: none;
 }
 
@@ -47,11 +47,21 @@
 }
 
 .nav-link:hover {
-  color: #73E2A7;
+  color: #73e2a7;
 }
 
 .contact {
   text-align: center;
   line-height: 28px;
   border-left: 2px solid var(--excel-dark-green);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-800 {
+    display: grid;
+  }
+
+  .nav {
+    display: none !important;
+  }
 }

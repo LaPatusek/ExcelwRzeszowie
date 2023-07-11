@@ -48,18 +48,43 @@
   display: flex;
 }
 
-.container svg {
-  margin-right: 0.6em;
-  width: fit-content;
-  height: fit-content;
+.container:hover .icon-container svg {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation-iteration-count: infinite;
+  transform: rotate(0deg);
+}
+
+@keyframes shake {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(5deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+.icon-container {
   background-color: var(--excel-green);
   padding: 7px;
   border-radius: 5px;
+  width: 46px;
+  height: 46px;
+  margin-right: 0.6em;
 }
 
-.container p {
+.container a {
   font-size: 22px;
   align-self: center;
+  color: black;
+  text-decoration: underline;
 }
 
 .left-socials {
@@ -276,4 +301,26 @@
   color: #48f0a1;
   font-weight: bold;
   letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 800px) {
+  .kontakt-section {
+    grid-template-columns: none;
+  }
+
+  .container {
+    width: fit-content;
+  }
+
+  .left-socials {
+    margin-top: 50px;
+  }
+
+  .right-section h4,
+  .input,
+  .checkbox-container,
+  .buttons,
+  .mess-after-form {
+    width: 100%;
+  }
 }
