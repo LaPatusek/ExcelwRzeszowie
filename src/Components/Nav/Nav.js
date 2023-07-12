@@ -38,15 +38,6 @@ const Nav = () => {
         </div>
 
         <div className={`${styles.nav} grid`}>
-          <div className={`${styles['navlink-wrap']} grid`}>
-            <NavLink
-              to='/oferta'
-              className={styles['nav-link']}
-              activeClassName={styles['active-nav-link']}
-            >
-              Oferta
-            </NavLink>
-          </div>
 
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink

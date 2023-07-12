@@ -40,10 +40,6 @@ const Footer = () => {
               <ArrowRight size='20' />
               Strona główna
             </Link>
-            <Link to='/oferta'>
-              <ArrowRight size='20' />
-              Oferta
-            </Link>
             <Link to='/wycena-szkolenie'>
               <ArrowRight size='20' />
               Wyceń szkolenie

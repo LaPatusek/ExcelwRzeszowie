@@ -11,7 +11,6 @@ import Privacy from './Components/Privacy/Privacy';
 import AboutUs from './Pages/AboutUs';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
-import Oferta from './Pages/Oferta';
 import Online from './Pages/Online';
 import Wycena from './Pages/Wycena';
 
@@ -40,9 +39,6 @@ function App() {
         <Switch>
           <Route path='/main'>
             <Main />
-          </Route>
-          <Route path='/oferta'>
-            <Oferta />
           </Route>
           <Route path='/o-nas'>
             <AboutUs />
