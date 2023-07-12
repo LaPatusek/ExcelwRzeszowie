@@ -1,0 +1,112 @@
+.privacy {
+  padding: 8rem 2rem;
+}
+
+.privacy h3,
+.privacy p,
+.privacy h4,
+.title,
+.back-button {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.privacy span {
+  justify-self: right;
+  margin-right: 5%;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: var(--excel-dark-green);
+  color: #48f0a1;
+  border: 2px solid #48f0a1;
+  user-select: none;
+}
+
+.privacy h2 {
+  font-size: 66px;
+  letter-spacing: 0.7px;
+  font-weight: bolder;
+  margin: 40px 0 40px 0;
+}
+
+.privacy h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.privacy p {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+  color: rgb(26, 26, 26);
+}
+
+.privacy h4 {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.privacy button {
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+  padding: 1em 2em;
+  background: var(--excel-green);
+  display: flex;
+  transition: background 0.2s;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  justify-self: right;
+}
+
+.privacy button .arrow {
+  position: relative;
+}
+
+.privacy button .arrow::before {
+  content: '';
+  position: absolute;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  top: -5px;
+  right: 0px;
+  transition: all 0.2s;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
+.privacy button:hover {
+  background-color: var(--excel-dark-green);
+}
+
+.privacy button:hover .arrow:before {
+  right: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .privacy h3,
+  .privacy p,
+  .privacy h4,
+  .title,
+  .back-button {
+    width: 80%;
+  }
+
+  .privacy h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .privacy hr {
+    width: 100%;
+  }
+}

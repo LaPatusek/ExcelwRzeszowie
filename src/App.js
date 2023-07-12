@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
+import Privacy from './Components/Privacy/Privacy';
 import AboutUs from './Pages/AboutUs';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
@@ -25,6 +26,10 @@ function App() {
           </Route>
           <Route path='/kontakt'>
             <Kontakt />
+          </Route>
+
+          <Route path='/polityka-prywatnosci'>
+            <Privacy />
           </Route>
 
           <Route path='/'>
