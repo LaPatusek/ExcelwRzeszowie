@@ -22,7 +22,7 @@
 
 .nav {
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   border: 2px solid var(--excel-dark-green);
   border-top: 0;
   border-right: 0;

@@ -81,6 +81,7 @@
 .icons-container {
   position: relative;
   grid-template-columns: repeat(2, 60px);
+  height: fit-content;
   justify-self: center;
 }
 

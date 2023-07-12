@@ -47,7 +47,7 @@ const Main = () => {
         <h2>Co oferujemy?</h2>
         <div className={`${styles['offer-boxes']} grid`}>
           <div className={styles.container}>
-            <h3>Mobilność</h3>
+            <h3>Szkolenie podstawowe</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               ultrices dignissim tristique. Integer iaculis varius lorem, vitae
@@ -57,7 +57,7 @@ const Main = () => {
           </div>
 
           <div className={styles.container}>
-            <h3>Zgranie</h3>
+            <h3>Szkolenie <br/> średniozaawansowane</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               ultrices dignissim tristique. Integer iaculis varius lorem, vitae
@@ -67,7 +67,7 @@ const Main = () => {
           </div>
 
           <div className={styles.container}>
-            <h3>Inwidualne podejście</h3>
+            <h3>Szkolenie zaawansowane</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               ultrices dignissim tristique. Integer iaculis varius lorem, vitae

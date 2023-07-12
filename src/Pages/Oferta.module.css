@@ -1,0 +1,26 @@
+.oferta {
+  background-color: var(--excel-green);
+  padding: 3rem 5rem;
+}
+
+.oferta span {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: var(--excel-dark-green);
+  color: #48f0a1;
+  border: 2px solid #48f0a1;
+  user-select: none;
+}
+
+.oferta h1 {
+  margin-top: 50px;
+  color: white;
+  font-size: 66px;
+}

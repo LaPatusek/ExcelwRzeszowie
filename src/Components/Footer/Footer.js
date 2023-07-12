@@ -44,12 +44,20 @@ const Footer = () => {
               <ArrowRight size='20' />
               Oferta
             </Link>
+            <Link to='/wycena-szkolenie'>
+              <ArrowRight size='20' />
+              Wyceń szkolenie
+            </Link>
             <Link to='/o-nas'>
               <ArrowRight size='20' />O nas
             </Link>
             <Link to='/kontakt'>
               <ArrowRight size='20' />
               Kontakt
+            </Link>
+            <Link to='/kurs-online'>
+              <ArrowRight size='20' />
+              Szkolenia online
             </Link>
           </div>
         </div>

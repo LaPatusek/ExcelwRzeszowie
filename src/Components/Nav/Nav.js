@@ -50,6 +50,16 @@ const Nav = () => {
 
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
+              to='/wycena-szkolenie'
+              className={`${styles['nav-link']}`}
+              activeClassName={styles['active-nav-link']}
+            >
+              Wycena
+            </NavLink>
+          </div>
+
+          <div className={`${styles['navlink-wrap']} grid`}>
+            <NavLink
               to='/o-nas'
               className={styles['nav-link']}
               activeClassName={styles['active-nav-link']}
@@ -58,13 +68,23 @@ const Nav = () => {
             </NavLink>
           </div>
 
-          <div className={`${styles['navlink-wrap']}  ${styles.contact} grid`}>
+          <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
               to='/kontakt'
               className={`${styles['nav-link']}`}
               activeClassName={styles['active-nav-link']}
             >
-              Skontaktuj się <br /> z nami!
+              Kontakt
+            </NavLink>
+          </div>
+
+          <div className={`${styles['navlink-wrap']}  ${styles.contact} grid`}>
+            <NavLink
+              to='/kurs-online'
+              className={`${styles['nav-link']}`}
+              activeClassName={styles['active-nav-link']}
+            >
+              Szkolenia <br /> Online
             </NavLink>
           </div>
         </div>

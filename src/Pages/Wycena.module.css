@@ -1,0 +1,341 @@
+.kontakt-section {
+    grid-template-columns: 50% 50%;
+  }
+  
+  .left-section {
+    grid-template-rows: min-content min-content min-content;
+    position: relative;
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3rem;
+  }
+  
+  .left-section span {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--excel-dark-green);
+    color: #48f0a1;
+    border: 2px solid #48f0a1;
+    user-select: none;
+  }
+  
+  .left-section h2 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    margin-bottom: 20px;
+  }
+  
+  .left-section h3 {
+    font-size: 24px;
+    letter-spacing: 0.6px;
+  }
+  
+  .left-contact {
+    margin-top: 30px;
+  }
+  
+  .container {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .container:hover .icon-container svg {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+  }
+  
+  @keyframes shake {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: rotate(5deg);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  .icon-container {
+    background-color: var(--excel-green);
+    padding: 7px;
+    border-radius: 5px;
+    width: 46px;
+    height: 46px;
+    margin-right: 0.6em;
+  }
+  
+  .container a {
+    font-size: 22px;
+    align-self: center;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .right-section {
+    background-color: var(--excel-green);
+    padding: calc(2rem + 25px) 3rem;
+  }
+  
+  .right-section h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    width: 90%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  
+  .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 90%;
+    border: 1px solid #48f0a1;
+    border-radius: 5px;
+  }
+  
+  .group > textarea {
+    resize: none;
+  }
+  
+  .group > .input:focus {
+    outline: none;
+  }
+  
+  .group > label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 8px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .group > .input:focus ~ label,
+  .group > .input:valid ~ label {
+    top: -20px;
+    font-size: 16px;
+    color: #89d6d9;
+  }
+  
+  .error > .input {
+    border: 1px solid red;
+  }
+  
+  .error > label {
+    color: red;
+  }
+  
+  .group p {
+    position: absolute;
+    margin-top: 4px;
+    font-size: 14px;
+    margin-left: 4px;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+
+  .options {
+    margin-bottom: 45px;
+  }
+
+  .options > .checkbox-container {
+    margin-bottom: 10px;
+  }
+
+  .options > .checkbox-container p {
+    transform: translateY(3px);
+  }
+
+  .options > .checkbox-container svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .options h5 {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    width: 90%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .checkbox-container {
+    width: 90%;
+    padding: 0 10px;
+  }
+  
+  .check {
+    cursor: pointer;
+  }
+  
+  .check input {
+    display: none;
+  }
+  
+  .check svg {
+    overflow: visible;
+    transform: translateY(2px);
+  }
+  
+  .path {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+  }
+  
+  .check input:checked ~ svg .path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+  }
+  
+  .check p {
+    margin-left: 0.6em;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .checkbox-container a {
+    color: #48f0a1;
+  }
+  
+  .checkbox-error .path {
+    stroke: red;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .buttons button {
+    --color: var(--excel-light-green);
+    font-family: inherit;
+    font-weight: bold;
+    width: 20em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+  
+  .buttons button:hover {
+    color: white;
+  }
+  
+  .buttons button:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    transition: all 0.7s;
+    top: 100%;
+    left: 100%;
+  }
+  
+  .buttons button:hover::before {
+    top: -80px;
+    left: -80px;
+  }
+  
+  .mess-after-form {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .mess-after-form svg {
+    color: #48f0a1;
+    margin-bottom: 5px;
+  }
+  
+  .mess-after-form p {
+    font-size: 20px;
+    color: #48f0a1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .kontakt-section {
+      grid-template-columns: none;
+    }
+  
+    .container {
+      width: fit-content;
+    }
+  
+    .left-section {
+      width: 100%;
+    }
+
+    .options {
+        width: fit-content
+    }
+  
+    .left-socials {
+      margin-top: 50px;
+    }
+  
+    .right-section{
+      width: 100vw;
+    }
+  
+    .right-section h4,
+    .input,
+    .checkbox-container,
+    .buttons,
+    .mess-after-form {
+      width: 100%;
+    }
+  }
+  
