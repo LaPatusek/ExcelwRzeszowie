@@ -314,13 +314,16 @@
 
   .left-section {
     width: 100%;
+    padding: 2rem 1rem;
   }
 
   .left-socials {
     margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
   }
 
-  .right-section{
+  .right-section {
     width: 100vw;
   }
 
