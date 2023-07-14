@@ -33,12 +33,16 @@ const Nav = () => {
       <div className={`${styles.navbar} grid`}>
         <div className={`${styles.logo} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' />
+            <img
+              src={logo}
+              alt='Excel w Rzeszowie'
+              width='400px'
+              height='106px'
+            />
           </Link>
         </div>
 
         <div className={`${styles.nav} grid`}>
-
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
               to='/wycena-szkolenie'

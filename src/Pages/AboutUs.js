@@ -1,5 +1,5 @@
 import { Fragment, useRef } from 'react';
-import businessman from '../Assets/businessman.jpeg';
+import businessman from '../Assets/businessman.webp';
 import useObserver from '../Components/hooks/useObserver';
 import styles from './AboutUs.module.css';
 

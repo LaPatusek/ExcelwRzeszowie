@@ -3,7 +3,7 @@ import { ArrowRight } from 'iconsax-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import hello from '../Assets/hand-right-outline.svg';
-import szkolenie from '../Assets/szkolenie.jpg';
+import szkolenie from '../Assets/szkolenie.webp';
 import styles from './Main.module.css';
 
 const Main = () => {
@@ -87,7 +87,7 @@ const Main = () => {
           </Link>
         </div>
 
-        <img src={szkolenie} alt='' width='100%' />
+        <img src={szkolenie} alt='' />
       </section>
     </div>
   );
