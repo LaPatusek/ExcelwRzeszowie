@@ -1,48 +1,12 @@
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'iconsax-react';
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import hello from '../Assets/hand-right-outline.svg';
 import szkolenie from '../Assets/szkolenie.webp';
+import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 
 const Main = () => {
-  const [animate, setAnimation] = useState(false);
-
-  useEffect(() => {
-    setAnimation(true);
-  }, []);
-
   return (
     <div className={styles.main}>
-      <div className={`${styles.title} grid`}>
-        <div className={styles['blur-circle-shape']} />
-        <div className={styles['heading-container']}>
-          <motion.h1
-            initial={{ opacity: 0, translateY: -200 }}
-            animate={animate ? { opacity: 1, translateY: 0 } : ''}
-            transition={{ duration: .7 }}
-          >
-            Szkolenia <br /> Excel <br /> w Rzeszowie
-          </motion.h1>
-        </div>
-
-        <div className={`${styles['about-us']} grid`}>
-          <div className={styles['about-us-container']}>
-            <img src={hello} alt='' height='64px' width='64px' />
-            <h2>
-              <span> Witaj!</span> <br />
-              Jesteśmy firmą działającą na rynku szkoleń od 2018 roku. Mamy
-              bogate doświadczenie w nauczaniu. Posiadamy wpis do Rejestru
-              Instytucji Szkoleniowych. Naszym sukcesem są zadowoleni kursanci.
-            </h2>
-            <Link to='/o-nas'>
-              <ArrowRight size='26' variant='Broken' /> Poznaj nas lepiej{' '}
-            </Link>
-          </div>
-        </div>
-      </div>
-
+      <Header />
       <div className={`${styles.oferta} grid`}>
         <h2>Co oferujemy?</h2>
         <div className={`${styles['offer-boxes']} grid`}>
@@ -57,7 +21,9 @@ const Main = () => {
           </div>
 
           <div className={styles.container}>
-            <h3>Szkolenie <br/> średniozaawansowane</h3>
+            <h3>
+              Szkolenie <br /> średniozaawansowane
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               ultrices dignissim tristique. Integer iaculis varius lorem, vitae

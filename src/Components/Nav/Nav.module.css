@@ -1,18 +1,11 @@
 .navbar {
-  grid-template-columns: 500px calc(100% - 500px);
+  grid-template-columns: 350px calc(100% - 350px);
   column-count: 2;
-  background-color: var(--excel-green);
+  background-color: var(--main-gray);
 }
 
 .navbar-800 {
   display: none;
-}
-
-.logo {
-  border: 2px solid var(--excel-dark-green);
-  border-right: 0;
-  border-top: 0;
-  border-left: 0;
 }
 
 .logo a {
@@ -23,9 +16,6 @@
 .nav {
   position: relative;
   grid-template-columns: repeat(4, 1fr);
-  border: 2px solid var(--excel-dark-green);
-  border-top: 0;
-  border-right: 0;
 }
 
 .navlink-wrap {
@@ -41,19 +31,26 @@
   text-transform: uppercase;
   letter-spacing: 0.7px;
   font-size: 26px;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #73e2a7;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #73e2a7;
+  color: var(--excel-light-green);
 }
 
 .contact {
   text-align: center;
   line-height: 28px;
-  border-left: 2px solid var(--excel-dark-green);
+}
+
+.contact a {
+  background-color: var(--excel-green);
+  border-radius: 40px;
+}
+
+.contact:hover a {
+  color: white;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,0 +1,23 @@
+.wave,
+.wave::before,
+.wave::after {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 250vw;
+  height: 250vw;
+  margin-left: -125vw;
+  transform-origin: 50% 50%;
+  background-color: transparent;
+  border-radius: 38% 42%;
+  box-shadow: inset 0 0 10vw rgba(255, 0, 255, 0.8);
+  animation: spin 16s infinite linear;
+  mix-blend-mode: multiply;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -36,8 +36,7 @@ const Nav = () => {
             <img
               src={logo}
               alt='Excel w Rzeszowie'
-              width='400px'
-              height='106px'
+              width='300px'
             />
           </Link>
         </div>

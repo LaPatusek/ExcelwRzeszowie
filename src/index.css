@@ -2,8 +2,10 @@
 
 :root {
   --excel-green: #1b7444;
-  --excel-dark-green: #1B512D;
+  --excel-dark-green: #1b512d;
   --excel-light-green: #21a366;
+
+  --main-gray: #23201e;
 }
 
 html {
