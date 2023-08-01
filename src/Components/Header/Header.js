@@ -3,7 +3,6 @@ import { ArrowRight } from 'iconsax-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import hello from '../../Assets/hand-right-outline.svg';
-import Wave from '../Elements/Wave';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -40,7 +39,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <Wave />
     </div>
   );
 };

@@ -64,6 +64,7 @@
   font-size: 24px;
   max-width: 400px;
   margin-bottom: 8px;
+  z-index: 4;
 }
 
 .about-us a {
@@ -71,6 +72,7 @@
   color: white;
   position: relative;
   transition: 0.4s ease-in-out;
+  z-index: 4;
 }
 
 .about-us a > svg {

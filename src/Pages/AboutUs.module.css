@@ -13,9 +13,9 @@
   border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
-  background-color: var(--excel-dark-green);
-  color: #48f0a1;
-  border: 2px solid #48f0a1;
+  font-weight: bold;
+  background-color: #48f0a1;
+  color: var(--excel-dark-green);
   user-select: none;
 }
 

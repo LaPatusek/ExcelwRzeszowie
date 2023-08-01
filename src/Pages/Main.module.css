@@ -1,8 +1,40 @@
 .oferta {
-  padding: 4rem 3rem;
+  padding: 5rem 3rem;
 }
 
-.oferta h2 {
+.offer-heading {
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 50% 40% 10%;
+}
+
+.offer-heading span {
+  margin-left: 1%;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #48f0a1;
+  color: var(--excel-dark-green);
+  user-select: none;
+}
+
+.offer-heading p {
+  transform: translateY(50px);
+  color: var(--main-gray);
+  justify-self: start;
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 24px;
+  user-select: none;
+}
+
+.offer-heading h2 {
+  margin-top: 20px;
   user-select: none;
   font-size: 4rem;
   letter-spacing: 0.6px;
@@ -13,7 +45,7 @@
 }
 
 .offer-boxes {
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(4, 24%);
   column-gap: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -21,73 +53,155 @@
 }
 
 .container {
+  max-width: 400px;
   display: grid;
   position: relative;
   justify-content: center;
-  max-width: 400px;
-  overflow: hidden;
-  border-radius: 5px;
-  background-color: var(--excel-green);
-  box-shadow: 5px 5px 10px 0 var(--excel-green);
-  padding: 60px 25px;
-  color: white;
+  border-radius: 10px;
+  background-color: var(--excel-light-green);
+  padding: 15px 10px;
+  color: black;
   transition: all 0.6s ease-in;
+  border: 2px solid #3f3f3f;
 }
 
 .container::before {
+  transform: translateX(2px) translateY(-2px);
   position: absolute;
-  left: -400px;
-  bottom: -380px;
   content: '';
-  width: 500px;
-  height: 500px;
-  background: #48f0a1;
-  transform: rotate(45deg);
-  transition: all 0.6s ease-in;
-}
-
-.container:hover {
-  color: black;
-  box-shadow: 5px 5px 10px 0 #89d6d9;
-}
-
-.container:hover::before {
-  left: 0;
-  bottom: 0;
-  transform: rotate(0deg);
+  top: 0;
+  right: 0;
+  z-index: 6;
+  height: 42px;
+  width: calc(30% + 2px);
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .container::after {
   position: absolute;
-  right: -400px;
-  top: -380px;
   content: '';
-  width: 500px;
-  height: 500px;
-  background: #89d6d9;
-  transform: rotate(45deg);
-  transition: all 0.6s ease-in;
-}
-
-.container:hover::after {
-  right: 0;
   top: 0;
-  transform: rotate(0deg);
+  right: 0;
+  background: rgb(27, 116, 68);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 116, 68, 1) 0%,
+    rgba(33, 163, 102, 1) 55%,
+    rgba(57, 198, 133, 1) 100%
+  );
+  width: 30%;
+  height: 38px;
+  transform: translateY(2px);
+  z-index: 6;
+  border-bottom-left-radius: 17px;
+  border-top-right-radius: 10px;
 }
 
-.container h3 {
+.container svg {
+  margin-left: 5px;
+  padding: 10px;
+  background-color: #48f0a1;
+  border-radius: 20px;
+}
+
+.container-text {
+  padding: 10px 15px 10px 15px;
+}
+
+.container-text h3 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   font-size: 22px;
-  letter-spacing: 0.6px;
-  z-index: 2;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  user-select: none;
 }
 
-.container p {
+.container-text p {
   font-size: 18px;
   line-height: 20px;
   z-index: 2;
+}
+
+.second-section {
+  padding: 3rem;
+}
+
+.section-heading {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-heading span {
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #48f0a1;
+  color: var(--excel-dark-green);
+  user-select: none;
+}
+
+.section-heading h2 {
+  font-size: 44px;
+  margin-top: 30px;
+  font-weight: bold;
+  letter-spacing: .7px;
+}
+
+.szkolenia {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+  margin-top: 44px;
+}
+
+.szkolenia img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.szkolenia h3 {
+  font-size: 32px;
+  letter-spacing: .6px;
+  margin-left: 1rem;
+}
+
+.szkolenia h4 {
+  color: #1a1a1a;
+  margin: 20px 0;
+  letter-spacing: .6px;
+  margin-left: 1rem;
+  font-size: 20px;
+  width: 65%;
+}
+
+.szkolenia ol {
+  font-size: 18px;
+  letter-spacing: .6px;
+  margin-left: 1rem;
+}
+
+.szkolenia a {
+  margin-left: 1rem;
+  padding: 12px 30px;
+  letter-spacing: .6px;
+  font-size: 18px;
+
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .kontakt-section {

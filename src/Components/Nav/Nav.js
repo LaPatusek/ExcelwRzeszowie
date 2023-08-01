@@ -33,11 +33,7 @@ const Nav = () => {
       <div className={`${styles.navbar} grid`}>
         <div className={`${styles.logo} grid`}>
           <Link to='/main'>
-            <img
-              src={logo}
-              alt='Excel w Rzeszowie'
-              width='300px'
-            />
+            <img src={logo} alt='Excel w Rzeszowie' width='300px' />
           </Link>
         </div>
 
@@ -45,7 +41,7 @@ const Nav = () => {
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
               to='/wycena-szkolenie'
-              className={`${styles['nav-link']}`}
+              className={`${styles['nav-link']} ${styles['right-justify']}`}
               activeClassName={styles['active-nav-link']}
             >
               Wycena
@@ -55,7 +51,7 @@ const Nav = () => {
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
               to='/o-nas'
-              className={styles['nav-link']}
+              className={`${styles['nav-link']} ${styles['center-justify']}`}
               activeClassName={styles['active-nav-link']}
             >
               O nas
@@ -65,22 +61,21 @@ const Nav = () => {
           <div className={`${styles['navlink-wrap']} grid`}>
             <NavLink
               to='/kontakt'
-              className={`${styles['nav-link']}`}
+              className={`${styles['nav-link']} ${styles['left-justify']}`}
               activeClassName={styles['active-nav-link']}
             >
               Kontakt
             </NavLink>
           </div>
-
-          <div className={`${styles['navlink-wrap']}  ${styles.contact} grid`}>
-            <NavLink
-              to='/kurs-online'
-              className={`${styles['nav-link']}`}
-              activeClassName={styles['active-nav-link']}
-            >
-              Szkolenia <br /> Online
-            </NavLink>
-          </div>
+        </div>
+        <div className={`${styles['navlink-wrap']}  ${styles.contact} grid`}>
+          <NavLink
+            to='/kurs-online'
+            className={`${styles['nav-link']}`}
+            activeClassName={styles['active-nav-link']}
+          >
+            Szkolenia <br /> Online
+          </NavLink>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 .navbar {
-  grid-template-columns: 350px calc(100% - 350px);
+  grid-template-columns: 350px calc(80% - 350px) 20%;
   column-count: 2;
   background-color: var(--main-gray);
 }
@@ -10,12 +10,12 @@
 
 .logo a {
   padding: 2rem 1rem;
-  justify-self: center;
 }
 
 .nav {
   position: relative;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
 }
 
 .navlink-wrap {
@@ -24,9 +24,20 @@
   align-content: center;
 }
 
+.right-justify {
+  justify-self: right;
+}
+
+.center-justify {
+  justify-self: center;
+}
+
+.left-justify {
+  justify-self: left;
+}
+
 .nav-link {
   position: relative;
-  justify-self: center;
   padding: 20px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
@@ -42,9 +53,11 @@
 .contact {
   text-align: center;
   line-height: 28px;
+  padding-right: 2rem;
 }
 
 .contact a {
+  place-self: end;
   background-color: var(--excel-green);
   border-radius: 40px;
 }

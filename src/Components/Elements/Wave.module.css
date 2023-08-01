@@ -1,23 +1,69 @@
-.wave,
-.wave::before,
-.wave::after {
-  content: '';
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  width: 250vw;
-  height: 250vw;
-  margin-left: -125vw;
-  transform-origin: 50% 50%;
-  background-color: transparent;
-  border-radius: 38% 42%;
-  box-shadow: inset 0 0 10vw rgba(255, 0, 255, 0.8);
-  animation: spin 16s infinite linear;
-  mix-blend-mode: multiply;
+.blockquote-wrapper {
+  width: 50%;
+  max-width: 350px;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
+.blockquote {
+  position: relative;
+}
+
+.blockquote h1 {
+  position: relative;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.blockquote h1:after {
+  content: '';
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 0 50px 0 0;
+  width: 60px;
+  height: 40px;
+  bottom: -42px;
+  left: 50px;
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+
+.blockquote h1:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  border: 6px solid white;
+  bottom: -3px;
+  left: 50px;
+  z-index: 2;
+}
+
+.blockquote h4 {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 1;
+  margin-left: 150px;
+  padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+  margin-left: -12px;
+}
+
+@media screen and (max-width: 800px) {
+  .blockquote-wrapper {
+    display: flex;
+  }
+
+  .blockquote h4::first-letter {
+    margin-left: -25px;
   }
 }
