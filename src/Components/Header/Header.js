@@ -3,6 +3,7 @@ import { ArrowRight } from 'iconsax-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import hello from '../../Assets/hand-right-outline.svg';
+import excel from '../../Assets/table.webp';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -26,6 +27,7 @@ const Header = () => {
       </div>
 
       <div className={`${styles['about-us']} grid`}>
+        <img src={excel} alt='Excel' width='300px' className={styles.excel}/>
         <div className={styles['about-us-container']}>
           <img src={hello} alt='' height='64px' width='64px' />
           <h2>

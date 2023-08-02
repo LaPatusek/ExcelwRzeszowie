@@ -90,15 +90,16 @@
   align-self: center;
   padding: 12px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: all 0.4s;
 }
 
 .facebook {
   border-top-left-radius: 25px;
-  transform: translateY(5px);
+  transform: translateY(5px) translateX(2px);
 }
 
 .instagram {
+  z-index: 2;
   border-top-right-radius: 25px;
   transform: translateX(-2px) translateY(5px);
   border-left: 2px solid white;
@@ -106,17 +107,19 @@
 }
 
 .twitter {
+  transform: translateX(2px);
   border-bottom-left-radius: 25px;
   border-top: 2px solid white;
   border-right: 2px solid white;
+  transition: all 0.4s;
 }
 
 .linkedin {
   border-bottom-right-radius: 25px;
-  transform: translateY(2px);
 }
 
-.icons-container svg:hover {
+.icons-container svg:hover,
+.icons-container img:hover {
   background-color: var(--excel-light-green);
 }
 

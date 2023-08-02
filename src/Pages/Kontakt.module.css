@@ -111,7 +111,18 @@
   transition: all 0.4s;
 }
 
-.left-socials svg:hover {
+.left-section img {
+  padding: 15px;
+  background-color: var(--excel-light-green);
+  border-radius: 50px;
+  border: 1px solid var(--excel-dark-green);
+  transition: all 0.4s;
+  width: 76px;
+  height: 76px;
+}
+
+.left-socials svg:hover,
+.left-section img:hover {
   filter: brightness(1.3);
   transform: scale(1.1);
 }
@@ -170,7 +181,7 @@
 .group > .input:valid ~ label {
   top: -20px;
   font-size: 16px;
-  color: #89d6d9;
+  color: #48f0a1;
 }
 
 .error > .input {
@@ -320,8 +331,7 @@
 
   .left-socials {
     margin-top: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
+    column-gap: 13px;
   }
 
   .right-section {
