@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import { Fragment, useEffect } from 'react';
 import {
   Route,
@@ -67,7 +66,6 @@ function App() {
       </main>
 
       <Footer />
-      <Analytics />
     </Fragment>
   );
 }
