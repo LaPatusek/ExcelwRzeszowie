@@ -318,7 +318,7 @@
   }
 
   .oferta {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
   }
 
   .offer-heading p {
@@ -327,6 +327,7 @@
 
   .offer-boxes {
     grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem;
     row-gap: 50px;
   }
 
