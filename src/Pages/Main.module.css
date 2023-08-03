@@ -317,6 +317,10 @@
     margin-bottom: 20px;
   }
 
+  .oferta {
+    padding: 3rem 1.5rem;
+  }
+
   .offer-heading p {
     transform: none;
   }
@@ -328,6 +332,10 @@
 
   .szkolenia {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .second-section {
+    padding: 3rem 1.5rem;
   }
 
   .second-image {

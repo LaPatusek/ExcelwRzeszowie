@@ -1,12 +1,16 @@
-import { Add, HambergerMenu } from 'iconsax-react';
+import { HambergerMenu } from 'iconsax-react';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom/cjs/react-router-dom.min';
-import logo from '../../Assets/logo.webp';
+import logo from '../../Assets/logov2.webp';
 import styles from './Nav.module.css';
 
 const Nav = () => {
   const [menuVis, setMenuVis] = useState(false);
-  const menuRef = useRef();
+  const linkRefOne = useRef();
+  const linkRefTwo = useRef();
+  const linkRefThree = useRef();
+  const linkRefFour = useRef();
+  const linkRefFive = useRef();
 
   const menuHandler = () => {
     setMenuVis((m) => !m);
@@ -21,10 +25,18 @@ const Nav = () => {
     }
 
     if (menuVis) {
-      const menu = menuRef?.current;
+      const linkOne = linkRefOne?.current;
+      const linkTwo = linkRefTwo?.current;
+      const linkThree = linkRefThree?.current;
+      const linkFour = linkRefFour?.current;
+      const linkFive = linkRefFive?.current;
       setTimeout(() => {
-        menu.classList.toggle(styles.active);
-      });
+        linkOne.classList.toggle(styles['aktywne']);
+        linkTwo.classList.toggle(styles['aktywne']);
+        linkThree.classList.toggle(styles['aktywne']);
+        linkFour.classList.toggle(styles['aktywne']);
+        linkFive.classList.toggle(styles['aktywne']);
+      }, 200);
     }
   }, [menuVis]);
 
@@ -33,7 +45,7 @@ const Nav = () => {
       <div className={`${styles.navbar} grid`}>
         <div className={`${styles.logo} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' width='300px' />
+            <img src={logo} alt='Excel w Rzeszowie' width='350px' />
           </Link>
         </div>
 
@@ -82,21 +94,21 @@ const Nav = () => {
       <div className={styles['navbar-800']}>
         <div className={`${styles['logo-800']} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' />
+            <img src={logo} alt='Excel w Rzeszowie' width='300px'/>
           </Link>
         </div>
 
-        <div className={`${styles['ham-contaienr']} grid`}>
-          <div className={styles['ham-menu']} onClick={menuHandler}>
-            <span>Menu</span> <HambergerMenu size='32' color='white' />
+        <div className={`grid`}>
+          <div
+            className={`${styles['ham-menu']} ${
+              menuVis ? styles['active-menu'] : ''
+            }`}
+          >
+            <HambergerMenu size='36' color='white' onClick={menuHandler} />
           </div>
           {menuVis && (
-            <div className={styles['menu-800']} ref={menuRef}>
-              <div className={styles['menu-logo-container']}>
-                <div className={styles['exit-button']} onClick={menuHandler}>
-                  <span>Exit</span> <Add size='40' color='white' />
-                </div>
-              </div>
+            <div className={styles['menu-800']}>
+              <div />
 
               <div className={styles['nav-link-container-800']}>
                 <NavLink
@@ -104,6 +116,7 @@ const Nav = () => {
                   className={`${styles['nav-link-800']}`}
                   activeClassName={styles['active-nav-link-800']}
                   onClick={menuHandler}
+                  ref={linkRefOne}
                 >
                   Strona główna
                 </NavLink>
@@ -111,23 +124,25 @@ const Nav = () => {
 
               <div className={styles['nav-link-container-800']}>
                 <NavLink
-                  to='/oferta'
+                  to='/wycena-szkolenie'
                   className={`${styles['nav-link-800']}`}
                   activeClassName={styles['active-nav-link-800']}
                   onClick={menuHandler}
+                  ref={linkRefTwo}
                 >
-                  Oferta
+                  Wycena
                 </NavLink>
               </div>
 
               <div className={styles['nav-link-container-800']}>
                 <NavLink
-                  to='/o-nas'
+                  to='/kurs-online'
                   className={`${styles['nav-link-800']}`}
                   activeClassName={styles['active-nav-link-800']}
                   onClick={menuHandler}
+                  ref={linkRefThree}
                 >
-                  O nas
+                  Szkolenia <br /> Online
                 </NavLink>
               </div>
 
@@ -137,8 +152,21 @@ const Nav = () => {
                   className={`${styles['nav-link-800']}`}
                   activeClassName={styles['active-nav-link-800']}
                   onClick={menuHandler}
+                  ref={linkRefFour}
                 >
                   Kontakt
+                </NavLink>
+              </div>
+
+              <div className={styles['nav-link-container-800']}>
+                <NavLink
+                  to='/o-nas'
+                  className={`${styles['nav-link-800']}`}
+                  activeClassName={styles['active-nav-link-800']}
+                  onClick={menuHandler}
+                  ref={linkRefFive}
+                >
+                  O nas
                 </NavLink>
               </div>
             </div>
