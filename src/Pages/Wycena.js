@@ -130,9 +130,12 @@ const Wycena = () => {
           Skontaktuj się <br /> i spytaj o wycenę!
         </h2>
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi dui,
-          consectetur at sapien ac, accumsan iaculis felis. Sed at tincidunt
-          nulla. Nunc eu bibendum nunc, et gravida eros.
+          W ciągu 48 godzin od przesłania formularza nasz zespół przygotuje dla
+          Ciebie szczegółową wycenę szkolenia, uwzględniając Twoje wymagania i
+          oczekiwania. Z naszej strony zapewniamy pełne zaangażowanie i
+          profesjonalizm, abyś mógł podjąć dobrze poinformowaną decyzję
+          dotyczącą szkolenia, które najlepiej spełni Twoje cele i potrzeby
+          rozwojowe.
         </h3>
         <div className={styles['left-contact']}>
           <div className={styles.container}>

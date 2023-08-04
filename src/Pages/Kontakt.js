@@ -89,9 +89,11 @@ const Kontakt = () => {
         <span>Kontakt</span>
         <h2>Skontaktuj się z nami!</h2>
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi dui,
-          consectetur at sapien ac, accumsan iaculis felis. Sed at tincidunt
-          nulla. Nunc eu bibendum nunc, et gravida eros.
+          Jesteśmy zobowiązani do odpowiedzi w ciągu 48 godzin od otrzymania
+          Twojego zgłoszenia, aby omówić Twoje potrzeby, odpowiedzieć na pytania
+          i zapewnić Ci wszelkie niezbędne informacje. Nasz zespół jest gotowy,
+          aby pomóc Ci znaleźć najlepsze rozwiązanie dopasowane do Twoich
+          oczekiwań i celów.
         </h3>
         <div className={styles['left-contact']}>
           <div className={styles.container}>

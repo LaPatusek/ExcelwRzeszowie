@@ -97,7 +97,8 @@
   border-top-right-radius: 10px;
 }
 
-.container svg {
+.container svg,
+.container img {
   margin-left: 5px;
   padding: 10px;
   background-color: #48f0a1;
@@ -122,7 +123,6 @@
 .container-text p {
   font-size: 18px;
   line-height: 20px;
-  z-index: 2;
 }
 
 .second-section {

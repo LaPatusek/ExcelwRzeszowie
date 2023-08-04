@@ -1,5 +1,6 @@
-import { Global, TickCircle } from 'iconsax-react';
+import { Crown, Global, Profile, TickCircle } from 'iconsax-react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import expIcon from '../Assets/exp.png';
 import szkolenie from '../Assets/szkolenie.webp';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
@@ -22,16 +23,17 @@ const Main = () => {
         </div>
         <div className={`${styles['offer-boxes']} grid`}>
           <div className={styles.container}>
-            <Global size='32' />
+            <img src={expIcon} width='52px' height='52px' alt='' />
             <div className={styles['container-text']}>
               <h3>
                 Bogate <br /> doświadczenie
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                ultrices dignissim tristique. Integer iaculis varius lorem,
-                vitae mollis massa dapibus eget. Nullam eget vestibulum sem.
-                Proin consectetur ullamcorper eleifend.
+                Nasze wieloletnie doświadczenie w nauczaniu pozwala nam
+                dostarczać wysokiej jakości i innowacyjne programy szkoleniowe,
+                które skutecznie przekształcają wiedzę w praktyczne
+                umiejętności, przyczyniając się do rozwoju kariery i biznesu
+                naszych klientów.
               </p>
             </div>
           </div>
@@ -43,40 +45,42 @@ const Main = () => {
                 Jesteśmy <br /> mobilni
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                ultrices dignissim tristique. Integer iaculis varius lorem,
-                vitae mollis massa dapibus eget. Nullam eget vestibulum sem.
-                Proin consectetur ullamcorper eleifend.
+                Nasza firma prowadzi zajęcia na terenie Rzeszowa oraz całego
+                kraju. Nasi wyszkoleni trenerzy są gotowi do podróży i przybędą
+                wskazanym miejscu, aby dostarczyć wysokiej jakości szkolenie,
+                dostosowane do Twoich potrzeb i wymagań.
               </p>
             </div>
           </div>
 
           <div className={styles.container}>
-            <Global size='32' />
+            <Profile size='32' />
             <div className={styles['container-text']}>
               <h3>
                 Dopasujemy się <br /> do poziomu
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                ultrices dignissim tristique. Integer iaculis varius lorem,
-                vitae mollis massa dapibus eget. Nullam eget vestibulum sem.
-                Proin consectetur ullamcorper eleifend.
+                Rozumiemy, że każdy uczestnik szkolenia może mieć unikalne
+                potrzeby i oczekiwania co do procesu nauki. Nasze podejście jest
+                elastyczne i uwzględnia te zróżnicowane wymagania, aby każdy
+                uczestnik mógł otrzymać wartościowe i indywidualnie dopasowane
+                do siebie szkolenie.
               </p>
             </div>
           </div>
 
           <div className={styles.container}>
-            <Global size='32' />
+            <Crown size='32' />
             <div className={styles['container-text']}>
               <h3>
                 Spełnimy <br /> Twoje oczekiwania
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                ultrices dignissim tristique. Integer iaculis varius lorem,
-                vitae mollis massa dapibus eget. Nullam eget vestibulum sem.
-                Proin consectetur ullamcorper eleifend.
+                Specjalizujemy się w opracowywaniu i dostosowywaniu szkoleń, aby
+                jak najlepiej odpowiadały Twoim potrzebom. Nasza elastyczność i
+                zaangażowanie pozwalają nam tworzyć spersonalizowane programy
+                szkoleniowe, które przynoszą realne korzyści i wzmacniają rozwój
+                Twojej firmy.
               </p>
             </div>
           </div>
@@ -100,8 +104,8 @@ const Main = () => {
             </h4>
             <ol>
               <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
+                <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
+                Certyfikat ukończenia
               </li>
               <li>
                 <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
@@ -119,7 +123,13 @@ const Main = () => {
             <Link to='/wycena-szkolenia'>Dowiedz się więcej</Link>
           </div>
           <img src={szkolenie} alt='' width='400px' height='400px' />
-          <img src={szkolenie} alt='' width='400px' height='400px' className={styles['second-image']}/>
+          <img
+            src={szkolenie}
+            alt=''
+            width='400px'
+            height='400px'
+            className={styles['second-image']}
+          />
           <div className={`${styles.zdalne} grid`}>
             <h3>Szkolenia online</h3>
             <h4>
@@ -130,8 +140,8 @@ const Main = () => {
             </h4>
             <ol>
               <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
+                <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
+                Certyfikat ukończenia
               </li>
               <li>
                 <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
