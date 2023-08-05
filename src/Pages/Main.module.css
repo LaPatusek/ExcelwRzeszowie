@@ -24,12 +24,13 @@
 }
 
 .offer-heading p {
-  transform: translateY(50px);
+  transform: translateY(40px);
   color: var(--main-gray);
   justify-self: start;
   max-width: 600px;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.6px;
   user-select: none;
 }
 
@@ -181,7 +182,7 @@
   letter-spacing: 0.6px;
   margin-left: 1rem;
   font-size: 20px;
-  width: 65%;
+  width: 80%;
 }
 
 .szkolenia ol {

@@ -16,9 +16,10 @@ const Main = () => {
             <h2>Dlaczego Excel w Rzeszowie?</h2>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            diam ornare, ultrices massa a, rhoncus lectus. Sed malesuada, enim
-            sit amet accumsan efficitur
+            Nasza firma wyróżnia się indywidualnym podejściem do uczestników,
+            zarówno w szkoleniach stacjonarnych, jak i online, co pozwala na
+            dostosowanie programu do konkretnych potrzeb i poziomu zaawansowania
+            każdej osoby
           </p>
         </div>
         <div className={`${styles['offer-boxes']} grid`}>
@@ -97,27 +98,28 @@ const Main = () => {
           <div className={`${styles.stacjonarne} grid`}>
             <h3>Szkolenia stacjonarne</h3>
             <h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              ultrices dignissim tristique. Integer iaculis varius lorem, vitae
-              mollis massa dapibus eget. Nullam eget vestibulum sem. Proin
-              consectetur ullamcorper eleifend.
+              Nasze profesjonalne szkolenia prowadzone są przez doświadczonych
+              ekspertów, którzy w przystępny sposób przekazują praktyczną
+              wiedzę. Nasi uczestnicy mają szansę na indywidualne wsparcie i
+              skupienie na własnych celach, co pozwala im skutecznie wykorzystać
+              potencjał tego popularnego narzędzia w pracy i życiu zawodowym.
             </h4>
             <ol>
               <li>
                 <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
+                Indywidualne podejście
+              </li>
+              <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
+                Elastyczne godziny szkoleń
+              </li>
+              <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' /> Egzamin
+                końcowy
+              </li>
+              <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
                 Certyfikat ukończenia
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
               </li>
             </ol>
             <Link to='/wycena-szkolenia'>Dowiedz się więcej</Link>
@@ -133,27 +135,31 @@ const Main = () => {
           <div className={`${styles.zdalne} grid`}>
             <h3>Szkolenia online</h3>
             <h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              ultrices dignissim tristique. Integer iaculis varius lorem, vitae
-              mollis massa dapibus eget. Nullam eget vestibulum sem. Proin
-              consectetur ullamcorper eleifend.
+              Dzięki naszym interaktywnym platformom szkoleniowym, uczestnicy
+              mają dostęp do bogatej bazy materiałów edukacyjnych, wideo lekcji
+              oraz praktycznych ćwiczeń, które pozwalają na naukę w dogodnym dla
+              nich tempie. Nasze szkolenia online zapewniają elastyczność,
+              umożliwiając dostęp do treści szkoleniowych z dowolnego miejsca i
+              urządzenia, co znacznie ułatwia proces nauki i pozwala na
+              efektywne wykorzystanie potencjału programu Excel w codziennej
+              pracy.
             </h4>
             <ol>
               <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' /> 20
+                godzin treści wideo na życzenie
+              </li>
+              <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' /> 15
+                ćwiczeń z Microsoft Excel
+              </li>
+              <li>
+                <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
+                Dożywotni dostęp
+              </li>
+              <li>
                 <TickCircle size='22' color='#39c685' variant='Bulk' />{' '}
                 Certyfikat ukończenia
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
-              </li>
-              <li>
-                <TickCircle size='22' color='#39c685' variant='Bulk' /> Lorem
-                ipsum dolor sit amet
               </li>
             </ol>
             <Link to='/kurs-online'>Dowiedz się więcej</Link>
