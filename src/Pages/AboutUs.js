@@ -19,21 +19,19 @@ const AboutUs = () => {
 
         <div className={`${styles['opis-wrap']} grid`}>
           <div className={`${styles.opis}`}>
-            <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id
-              neque quis mi tincidunt ultrices. Nullam vitae erat consequat,
-              eleifend justo vel, posuere sapien.
-            </h2>
+            <h2>Doświadczenie, Jakość i Satysfakcja Kursantów od 2018 roku</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id
-              neque quis mi tincidunt ultrices. Nullam vitae erat consequat,
-              eleifend justo vel, posuere sapien. Vestibulum egestas libero non
-              ligula ultrices, at hendrerit erat viverra. Cras aliquam sagittis
-              augue, non rutrum diam faucibus nec. Etiam tempor non orci sed
-              dignissim. <br /> <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id
-              neque quis mi tincidunt ultrices. Nullam vitae erat consequat,
-              eleifend justo vel, posuere sapien.
+              Od momentu naszego powstania w 2018 roku, zdobyliśmy bogate
+              doświadczenie w dziedzinie szkoleń, co pozwoliło nam wypracować
+              skuteczne metody nauczania. Nasze długoletnie zaangażowanie w
+              edukację przyniosło nam również cenny wpis do Rejestru Instytucji
+              Szkoleniowych, co potwierdza naszą wiarygodność i wysoki standard
+              usług. <br /> <br />
+              Naszym największym osiągnięciem są zadowoleni kursanci, których
+              rosnąca liczba potwierdza, że nasze szkolenia nie tylko
+              dostarczają wartościowej wiedzy, ale także przekładają się na
+              praktyczne umiejętności, przyczyniające się do sukcesu i rozwoju
+              zawodowego każdego uczestnika.
             </p>
           </div>
 
@@ -84,10 +82,10 @@ const AboutUs = () => {
                 <span> 01</span>
               </div>
               <div>
-                <h3>Krok</h3>
+                <h3>Przygotowanie</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis sem id libero cursus dictum.
+                  Przygotowujemy materiały i organizujemy pracę w sposób
+                  staranny i efektywny, aby zapewnić płynny przebieg szkolenia
                 </p>
               </div>
             </div>
@@ -95,10 +93,11 @@ const AboutUs = () => {
               className={`${styles['timeline-component']} ${styles['timeline-content']} ${styles['right']}`}
             >
               <div>
-                <h3>Krok</h3>
+                <h3>Szkolenie</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis sem id libero cursus dictum.
+                  Zapewniamy uczestnikom wiedzę oraz materiały potrzebne do
+                  nauki, które są kluczowe dla skutecznego przyswajania nowych
+                  treści
                 </p>
               </div>
               <div className={styles.number}>
@@ -124,10 +123,11 @@ const AboutUs = () => {
                 <span> 03</span>
               </div>
               <div>
-                <h3>Krok</h3>
+                <h3>Egzamin końcowy</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis sem id libero cursus dictum.
+                  Egzamin, który jest integralną częścią naszych szkoleń, ma na
+                  celu skrupulatne sprawdzenie i potwierdzenie nabytej wiedzy
+                  oraz umiejętności, które uczestnicy zdobyli podczas szkolenia.
                 </p>
               </div>
             </div>
@@ -135,10 +135,12 @@ const AboutUs = () => {
               className={`${styles['timeline-component']} ${styles['timeline-content']} ${styles['right']}`}
             >
               <div>
-                <h3>Krok</h3>
+                <h3>Certyfikat ukończenia</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis sem id libero cursus dictum.
+                  Po zakończeniu szkolenia oraz po zdaniu egzaminu końcowego,
+                  każdy uczestnik otrzymuje od nas certyfikat potwierdzający
+                  ukończenie kursu. Ten oficjalny dokument stanowi dowód na
+                  zdobycie nowych umiejętności.
                 </p>
               </div>
               <div className={styles.number}>

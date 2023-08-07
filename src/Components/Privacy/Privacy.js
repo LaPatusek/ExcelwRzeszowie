@@ -12,16 +12,17 @@ const Privacy = () => {
     <div className={styles.privacy}>
       <div className={`${styles.title} grid`}>
         <span>Polityka prywatności</span>
-        <h2>Polityka <br /> prywatności</h2>
+        <h2>
+          Polityka <br /> prywatności
+        </h2>
       </div>
 
-      <h3>Polityka prywatności dla firmy tworzącej strony internetowe:</h3>
+      <h3>Polityka prywatności dla firmy prowadzącej szkolenia:</h3>
       <p>
         Nasza firma zobowiązuje się do ochrony prywatności użytkowników naszych
-        usług oraz klientów, którzy korzystają z naszych usług tworzenia stron
-        internetowych. W ramach naszej polityki prywatności, poniżej
-        przedstawiamy informacje dotyczące sposobu zbierania, przechowywania i
-        wykorzystywania danych osobowych.
+        usług oraz klientów, którzy korzystają z naszych szkoleń. W ramach
+        naszej polityki prywatności, poniżej przedstawiamy informacje dotyczące
+        sposobu zbierania, przechowywania i wykorzystywania danych osobowych.
       </p>
 
       <h3>Jakie informacje zbieramy?</h3>
@@ -29,8 +30,7 @@ const Privacy = () => {
         Podczas korzystania z naszych usług, zbieramy tylko te informacje, które
         są nam niezbędne do realizacji zamówienia i zapewnienia najwyższej
         jakości usług. Mogą to być informacje takie jak imię i nazwisko, adres
-        e-mail, numer telefonu, adres do korespondencji i informacje dotyczące
-        preferencji dotyczących strony internetowej.
+        e-mail, numer telefonu, adres do korespondencji.
       </p>
 
       <h3>Sposób wykorzystania informacji</h3>

@@ -1,6 +1,8 @@
 import { Crown, Global, Profile, TickCircle } from 'iconsax-react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import expIcon from '../Assets/exp.png';
+import online from '../Assets/CourseOnline.webp';
+import stacjonarny from '../Assets/Stacjonarny.webp';
+import expIcon from '../Assets/exp.webp';
 import szkolenie from '../Assets/szkolenie.webp';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
@@ -124,10 +126,15 @@ const Main = () => {
             </ol>
             <Link to='/wycena-szkolenia'>Dowiedz się więcej</Link>
           </div>
-          <img src={szkolenie} alt='' width='400px' height='400px' />
           <img
-            src={szkolenie}
-            alt=''
+            src={stacjonarny}
+            alt='Szkolenia stacjonarne'
+            width='400px'
+            height='400px'
+          />
+          <img
+            src={online}
+            alt='Szkolenia online'
             width='400px'
             height='400px'
             className={styles['second-image']}
@@ -176,7 +183,7 @@ const Main = () => {
           </Link>
         </div>
 
-        <img src={szkolenie} alt='' />
+        <img src={szkolenie} alt='Szkolenia' />
       </section>
     </div>
   );

@@ -58,9 +58,11 @@
 
 .opis h2 {
   color: white;
-  font-size: 22px;
-  margin-bottom: 40px;
+  font-size: 28px;
+  letter-spacing: .7px;
+  margin-bottom: 20px;
   max-width: 500px;
+  user-select: none;
 }
 
 .opis p {
@@ -192,8 +194,8 @@
 
 .timeline-content h3 {
   color: var(--excel-light-green);
-  font-size: 22px;
-  margin-bottom: 24px;
+  font-size: 26px;
+  margin-bottom: 20px;
   letter-spacing: 0.7px;
   font-weight: bold;
 }
@@ -290,6 +292,10 @@
     display: block !important;
   }
 
+  .number {
+    display: none;
+  }
+
   .second-circle-800 {
     position: absolute;
     top: -310px;
@@ -297,6 +303,6 @@
 
   .forth-circle-800 {
     position: absolute;
-    top: -355px;
+    top: -410px;
   }
 }
