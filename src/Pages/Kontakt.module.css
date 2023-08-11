@@ -29,15 +29,19 @@
 
 .left-section h2 {
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
+  text-align: center;
+  margin-right: auto;
 }
 
 .left-section h3 {
   font-size: 24px;
+  line-height: 26px;
   letter-spacing: 0.6px;
+  max-width: 500px;
 }
 
 .left-contact {
@@ -89,6 +93,7 @@
 }
 
 .left-socials {
+  margin-top: 40px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
   width: fit-content;

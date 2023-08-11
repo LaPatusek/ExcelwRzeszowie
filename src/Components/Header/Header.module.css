@@ -65,13 +65,20 @@
 }
 
 .about-us img {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: 0.4s ease-in-out;
+}
+
+.about-us h2 > span {
+  letter-spacing: .7px;
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .about-us h2 {
   font-size: 24px;
   max-width: 400px;
+  line-height: 28px;
   margin-bottom: 8px;
 }
 
