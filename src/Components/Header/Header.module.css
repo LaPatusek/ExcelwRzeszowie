@@ -48,10 +48,6 @@
   object-position: right;
 }
 
-.about-us:hover .about-us-container img {
-  transform: rotate(25deg);
-}
-
 .about-us:hover .about-us-container {
   bottom: 4.5rem;
 }
@@ -66,18 +62,17 @@
 
 .about-us img {
   margin-bottom: 10px;
-  transition: 0.4s ease-in-out;
 }
 
 .about-us h2 > span {
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   font-size: 28px;
   line-height: 40px;
 }
 
 .about-us h2 {
   font-size: 24px;
-  max-width: 400px;
+  max-width: 450px;
   line-height: 28px;
   margin-bottom: 8px;
 }

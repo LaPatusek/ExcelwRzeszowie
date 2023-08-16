@@ -308,6 +308,12 @@
   }
 }
 
+@media screen and (max-width: 1136px) {
+  .offer-heading p {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .offer-heading {
     grid-template-columns: repeat(1, 1fr);
