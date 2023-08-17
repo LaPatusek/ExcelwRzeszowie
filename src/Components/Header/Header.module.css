@@ -60,10 +60,6 @@
   transition: 0.4s ease-in-out;
 }
 
-.about-us img {
-  margin-bottom: 10px;
-}
-
 .about-us h2 > span {
   letter-spacing: 0.7px;
   font-size: 28px;

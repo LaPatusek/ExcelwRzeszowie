@@ -121,15 +121,15 @@
 }
 
 .active .first-count {
-  --num: 5;
+  --num: 10;
 }
 
 .active .second-count {
-  --num: 20;
+  --num: 120;
 }
 
 .active .third-count {
-  --num: 500;
+  --num: 1500;
 }
 
 .first-count::after,
