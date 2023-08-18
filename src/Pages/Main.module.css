@@ -38,7 +38,8 @@
   margin-top: 20px;
   user-select: none;
   font-size: 4rem;
-  letter-spacing: 0.6px;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-bottom: 50px;
   width: fit-content;
   margin-left: auto;
@@ -172,7 +173,8 @@
 
 .szkolenia h3 {
   font-size: 32px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
   margin-left: 1rem;
 }
 
@@ -202,7 +204,8 @@
 .szkolenia a {
   margin-left: 1rem;
   padding: 12px 30px;
-  letter-spacing: 0.6px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
   font-size: 18px;
   background-color: green;
   color: white;

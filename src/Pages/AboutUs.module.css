@@ -59,7 +59,7 @@
 .opis h2 {
   color: white;
   font-size: 28px;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   margin-bottom: 20px;
   max-width: 500px;
   user-select: none;
@@ -117,6 +117,7 @@
   transition: --num 3s;
   counter-set: num var(--num);
   font-size: 40px;
+  font-weight: bold;
   user-select: none;
 }
 

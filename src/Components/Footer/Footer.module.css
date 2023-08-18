@@ -30,9 +30,10 @@
 .kontakt h3,
 .strony h3,
 .socials h3 {
+  font-weight: bold;
   text-align: center;
   font-size: 26px;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 

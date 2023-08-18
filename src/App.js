@@ -32,7 +32,9 @@ function App() {
 
   return (
     <Fragment>
-      <Nav />
+      <header>
+        <Nav />
+      </header>
 
       <main>
         <Switch>
@@ -65,7 +67,9 @@ function App() {
         </Switch>
       </main>
 
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </Fragment>
   );
 }
