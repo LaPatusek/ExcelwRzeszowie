@@ -1,5 +1,6 @@
+import emailjs from '@emailjs/browser';
 import { Call, Facebook, Instagram, TickSquare } from 'iconsax-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Twitter from '../Assets/twitterx.webp';
 import useInput from '../Components/hooks/useInput';
@@ -9,6 +10,7 @@ const Kontakt = () => {
   const [formIsSent, setFormIsSent] = useState(false);
   const [checkState, setCheckState] = useState(false);
   const [checkIsTouched, setCheckIsTouched] = useState(false);
+  const formRef = useRef();
 
   const checkFunction = () => {
     setCheckState(!checkState);
@@ -25,6 +27,22 @@ const Kontakt = () => {
     if (!formIsValid) {
       return;
     }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
 
     setFormIsSent(true);
     setCheckState(false);
@@ -87,7 +105,9 @@ const Kontakt = () => {
     <section className={`${styles['kontakt-section']} grid`}>
       <div className={`${styles['left-section']} grid`}>
         <span>Kontakt</span>
-        <h2>Skontaktuj się <br /> z nami!</h2>
+        <h2>
+          Skontaktuj się <br /> z nami!
+        </h2>
         <h3>
           Jesteśmy zobowiązani do odpowiedzi w ciągu 48 godzin od otrzymania
           Twojego zgłoszenia, aby omówić Twoje potrzeby, odpowiedzieć na pytania
@@ -186,7 +206,7 @@ const Kontakt = () => {
       </div>
       <div className={styles['right-section']}>
         <h4>Formularz kontaktowy</h4>
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} ref={formRef}>
           <div
             className={`${styles.group} ${nameHasError ? styles.error : ''}`}
           >
@@ -194,6 +214,7 @@ const Kontakt = () => {
               required='Imie i nazwisko'
               type='text'
               id='name'
+              name='user_name'
               autoComplete='false'
               value={enteredName}
               className={styles.input}
@@ -211,6 +232,7 @@ const Kontakt = () => {
             <input
               required='Temat'
               id='topic'
+              name='user_topic'
               type='text'
               autoComplete='false'
               value={enteredTopic}
@@ -229,6 +251,7 @@ const Kontakt = () => {
             <input
               required='Adres email'
               id='mail'
+              name='user_email'
               value={enteredMail}
               type='text'
               autoComplete='false'
@@ -247,6 +270,7 @@ const Kontakt = () => {
             <textarea
               required='Twoja wiadomość'
               id='message'
+              name='message'
               value={enteredMessage}
               autoComplete='false'
               className={styles.input}

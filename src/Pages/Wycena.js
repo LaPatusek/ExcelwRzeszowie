@@ -1,5 +1,6 @@
+import emailjs from '@emailjs/browser';
 import { Call, TickSquare } from 'iconsax-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import useInput from '../Components/hooks/useInput';
 import styles from './Wycena.module.css';
@@ -13,6 +14,8 @@ const Wycena = () => {
   const [egzaminState, setEgzaminState] = useState(false);
   const [salaState, setSalaState] = useState(false);
   const [materialsState, setMaterialsState] = useState(false);
+
+  const wycenaRef = useRef();
 
   const checkFunction = () => {
     setCheckState(!checkState);
@@ -45,6 +48,22 @@ const Wycena = () => {
     if (!formIsValid) {
       return;
     }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_WYCENA,
+        wycenaRef.current,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
 
     setFormIsSent(true);
     setCheckState(false);
@@ -165,7 +184,7 @@ const Wycena = () => {
       </div>
       <div className={styles['right-section']}>
         <h4>Wyślij zapytanie o cenę szkolenia</h4>
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} ref={wycenaRef}>
           <div
             className={`${styles.group} ${nameHasError ? styles.error : ''}`}
           >
@@ -173,6 +192,7 @@ const Wycena = () => {
               required='Imie i nazwisko'
               type='text'
               id='name'
+              name='user_name'
               autoComplete='false'
               value={enteredName}
               className={styles.input}
@@ -190,6 +210,7 @@ const Wycena = () => {
             <input
               required='Temat'
               id='topic'
+              name='user_topic'
               type='text'
               autoComplete='false'
               value={enteredTopic}
@@ -208,6 +229,7 @@ const Wycena = () => {
             <input
               required='Adres email'
               id='mail'
+              name='user_email'
               value={enteredMail}
               type='text'
               autoComplete='false'
@@ -227,6 +249,7 @@ const Wycena = () => {
               required='Ilość godzin'
               id='hour'
               type='number'
+              name='user_godziny'
               autoComplete='false'
               value={enteredHours}
               className={styles.input}
@@ -244,6 +267,7 @@ const Wycena = () => {
             <textarea
               required='Twoja wiadomość'
               id='message'
+              name='message'
               value={enteredMessage}
               autoComplete='false'
               className={styles.input}

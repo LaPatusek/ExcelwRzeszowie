@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emailjs/browser": "^3.11.0",
     "eslint-config-react-app": "^7.0.1",
     "framer-motion": "^10.12.18",
     "iconsax-react": "^0.0.8",
