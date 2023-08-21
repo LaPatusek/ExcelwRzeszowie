@@ -1,4 +1,5 @@
 import { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import {
   Route,
   Switch,
@@ -6,12 +7,17 @@ import {
 } from 'react-router-dom/cjs/react-router-dom.min';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
+import Cookies from './Components/Privacy/Cookies';
 import Privacy from './Components/Privacy/Privacy';
 import AboutUs from './Pages/AboutUs';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
 import Online from './Pages/Online';
 import Wycena from './Pages/Wycena';
+
+const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -29,6 +35,12 @@ function App() {
       }, 0);
     }
   }, [pathname, hash, key]);
+
+  ReactGA.send({
+    hitType: 'pageview',
+    page: window.location.hash,
+    title: window.location.hash,
+  });
 
   return (
     <Fragment>
@@ -70,6 +82,8 @@ function App() {
       <footer>
         <Footer />
       </footer>
+
+      <Cookies />
     </Fragment>
   );
 }
