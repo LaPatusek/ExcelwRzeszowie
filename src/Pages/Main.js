@@ -1,4 +1,5 @@
 import { Crown, Global, Profile, TickCircle } from 'iconsax-react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import online from '../Assets/CourseOnline.webp';
 import stacjonarny from '../Assets/Stacjonarny.webp';
@@ -10,6 +11,9 @@ import styles from './Main.module.css';
 const Main = () => {
   return (
     <div className={styles.main}>
+      <Helmet>
+        <link rel='canonical' href='https://www.excelrzeszow.pl/' />
+      </Helmet>
       <Header />
       <section className={`${styles.oferta} grid`}>
         <div className={`${styles['offer-heading']} grid`}>

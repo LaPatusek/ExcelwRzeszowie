@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { Call, Facebook, Instagram, TickSquare } from 'iconsax-react';
 import { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Twitter from '../Assets/twitterx.webp';
 import useInput from '../Components/hooks/useInput';
@@ -103,6 +104,9 @@ const Kontakt = () => {
 
   return (
     <section className={`${styles['kontakt-section']} grid`}>
+      <Helmet>
+        <link rel='canonical' href='https://www.excelrzeszow.pl/#/kontakt' />
+      </Helmet>
       <div className={`${styles['left-section']} grid`}>
         <span>Kontakt</span>
         <h2>

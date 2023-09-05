@@ -1,4 +1,5 @@
 import { Fragment, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import businessman from '../Assets/businessman.webp';
 import useObserver from '../Components/hooks/useObserver';
 import styles from './AboutUs.module.css';
@@ -9,6 +10,9 @@ const AboutUs = () => {
 
   return (
     <Fragment>
+      <Helmet>
+        <link rel='canonical' href='https://www.excelrzeszow.pl/#/o-nas' />
+      </Helmet>
       <div className={styles['about-us']}>
         <div className={styles.title}>
           <span>O nas</span>

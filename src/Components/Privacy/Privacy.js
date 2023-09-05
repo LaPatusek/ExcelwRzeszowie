@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import styles from './Privacy.module.css';
 
@@ -10,6 +11,12 @@ const Privacy = () => {
 
   return (
     <div className={styles.privacy}>
+      <Helmet>
+        <link
+          rel='canonical'
+          href='https://www.excelrzeszow.pl/#/polityka-prywatnosci'
+        />
+      </Helmet>
       <div className={`${styles.title} grid`}>
         <span>Polityka prywatności</span>
         <h2>

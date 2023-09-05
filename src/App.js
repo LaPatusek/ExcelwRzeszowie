@@ -13,6 +13,7 @@ import AboutUs from './Pages/AboutUs';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
 import Online from './Pages/Online';
+import PageNotFound from './Pages/PageNotFound';
 import Wycena from './Pages/Wycena';
 
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
@@ -70,11 +71,11 @@ function App() {
             <Privacy />
           </Route>
 
-          <Route path='/'>
+          <Route exact path='/'>
             <Main />
           </Route>
           <Route path='*'>
-            <Main />
+            <PageNotFound />
           </Route>
         </Switch>
       </main>

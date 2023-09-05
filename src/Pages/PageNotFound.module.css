@@ -1,0 +1,65 @@
+.wrap {
+  padding: 10rem 0;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--excel-green);
+}
+
+.wrap h1 {
+  font-size: 44px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.wrap h2 {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.wrap span {
+  color: rgb(255, 0, 0);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+
+.link {
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.link a svg {
+  transform: translateY(4px);
+}
+
+.link button svg {
+  transform: translateY(3px);
+}
+
+.link a,
+.link button {
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.4s;
+  background-color: transparent;
+}
+
+.link button:hover {
+  transform: translateX(-6px);
+}
+
+.link a:hover {
+  transform: translateX(6px);
+}
+
+@media screen and (max-width: 900px) {
+  .wrap {
+    padding: 6rem 0;
+  }
+}

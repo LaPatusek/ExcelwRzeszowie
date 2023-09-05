@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { Call, TickSquare } from 'iconsax-react';
 import { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import useInput from '../Components/hooks/useInput';
 import styles from './Wycena.module.css';
@@ -141,6 +142,12 @@ const Wycena = () => {
 
   return (
     <section className={`${styles['kontakt-section']} grid`}>
+      <Helmet>
+        <link
+          rel='canonical'
+          href='https://www.excelrzeszow.pl/#/wycena-szkolenie'
+        />
+      </Helmet>
       <div className={`${styles['left-section']} grid`}>
         <span>
           Wyceń <br /> szkolenie
