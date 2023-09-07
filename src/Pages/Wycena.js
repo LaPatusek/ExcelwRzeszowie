@@ -250,7 +250,7 @@ const Wycena = () => {
           </div>
 
           <div
-            className={`${styles.group} ${topicHasError ? styles.error : ''}`}
+            className={`${styles.group} ${hourHasError ? styles.error : ''}`}
           >
             <input
               required='Ilość godzin'
