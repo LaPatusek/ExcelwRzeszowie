@@ -45,7 +45,12 @@ const Nav = () => {
       <div className={`${styles.navbar} grid`}>
         <div className={`${styles.logo} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' width='350px' />
+            <img
+              src={logo}
+              alt='Excel w Rzeszowie'
+              width='350px'
+              height='auto'
+            />
           </Link>
         </div>
 
@@ -94,7 +99,7 @@ const Nav = () => {
       <div className={styles['navbar-800']}>
         <div className={`${styles['logo-800']} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' width='300px'/>
+            <img src={logo} alt='Excel w Rzeszowie' width='300px' />
           </Link>
         </div>
 

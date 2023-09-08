@@ -14,6 +14,8 @@
 
 .logo img {
   transform: translateY(10px);
+  width: 350px;
+  height: auto;
 }
 
 .nav {
@@ -48,6 +50,10 @@
   font-size: 26px;
   color: #73e2a7;
   transition: color 0.3s;
+}
+
+.active-nav-link {
+  filter: brightness(1.25);
 }
 
 .nav-link:hover {
