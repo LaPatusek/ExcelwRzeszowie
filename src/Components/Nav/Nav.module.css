@@ -91,6 +91,11 @@
     padding: 0.5rem 1.5rem;
   }
 
+  .logo-800 img {
+    width: 300px;
+    height: auto;
+  }
+
   .ham-menu {
     z-index: 18;
   }

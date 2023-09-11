@@ -99,7 +99,7 @@ const Nav = () => {
       <div className={styles['navbar-800']}>
         <div className={`${styles['logo-800']} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' width='300px' />
+            <img src={logo} alt='Excel w Rzeszowie' width='300px' height='auto'/>
           </Link>
         </div>
 
