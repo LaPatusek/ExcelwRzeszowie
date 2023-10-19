@@ -12,7 +12,6 @@ import Privacy from './Components/Privacy/Privacy';
 import AboutUs from './Pages/AboutUs';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
-import Online from './Pages/Online';
 import PageNotFound from './Pages/PageNotFound';
 import Wycena from './Pages/Wycena';
 
@@ -62,9 +61,6 @@ function App() {
           </Route>
           <Route path='/kontakt'>
             <Kontakt />
-          </Route>
-          <Route path='/kurs-online'>
-            <Online />
           </Route>
 
           <Route path='/polityka-prywatnosci'>

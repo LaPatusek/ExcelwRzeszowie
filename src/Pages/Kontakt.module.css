@@ -34,7 +34,7 @@
   letter-spacing: 0.7px;
   line-height: 54px;
   margin-bottom: 20px;
-  text-align:center;
+  text-align: center;
   margin-right: auto;
 }
 
@@ -333,7 +333,7 @@
 
   .left-section {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
   }
 
   .left-socials {

@@ -328,10 +328,13 @@
   }
 
   .oferta {
-    padding: 3rem 1rem;
+    padding: 4rem 0.5rem;
   }
 
   .offer-heading p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     transform: none;
   }
 

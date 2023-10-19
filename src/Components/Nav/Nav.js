@@ -86,20 +86,26 @@ const Nav = () => {
           </div>
         </div>
         <div className={`${styles['navlink-wrap']}  ${styles.contact} grid`}>
-          <NavLink
-            to='/kurs-online'
+          <a
+            href='https://www.excelnawypasie.pl/'
             className={`${styles['nav-link']}`}
-            activeClassName={styles['active-nav-link']}
+            target='_blank'
+            rel='noreferrer'
           >
             Szkolenia <br /> Online
-          </NavLink>
+          </a>
         </div>
       </div>
 
       <div className={styles['navbar-800']}>
         <div className={`${styles['logo-800']} grid`}>
           <Link to='/main'>
-            <img src={logo} alt='Excel w Rzeszowie' width='300px' height='auto'/>
+            <img
+              src={logo}
+              alt='Excel w Rzeszowie'
+              width='300px'
+              height='auto'
+            />
           </Link>
         </div>
 
@@ -140,15 +146,15 @@ const Nav = () => {
               </div>
 
               <div className={styles['nav-link-container-800']}>
-                <NavLink
-                  to='/kurs-online'
+                <a
+                  href='https://www.excelnawypasie.pl/'
                   className={`${styles['nav-link-800']}`}
-                  activeClassName={styles['active-nav-link-800']}
-                  onClick={menuHandler}
+                  target='_blank'
+                  rel='noreferrer'
                   ref={linkRefThree}
                 >
                   Szkolenia <br /> Online
-                </NavLink>
+                </a>
               </div>
 
               <div className={styles['nav-link-container-800']}>
