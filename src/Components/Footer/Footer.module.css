@@ -82,7 +82,9 @@
 .icons-container {
   position: relative;
   grid-template-columns: repeat(2, 60px);
-  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   justify-self: center;
 }
 
@@ -95,28 +97,11 @@
 }
 
 .facebook {
-  border-top-left-radius: 25px;
-  transform: translateY(5px) translateX(2px);
-}
-
-.instagram {
-  z-index: 2;
-  border-top-right-radius: 25px;
-  transform: translateX(-2px) translateY(5px);
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-.twitter {
-  transform: translateX(2px);
-  border-bottom-left-radius: 25px;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  transition: all 0.4s;
+  border-radius: 25px;
 }
 
 .linkedin {
-  border-bottom-right-radius: 25px;
+  border-radius: 25px;
 }
 
 .icons-container svg:hover,
@@ -148,7 +133,7 @@
   .third-wrap {
     padding: 2rem;
   }
-  
+
   .second-wrap {
     border: 0;
   }

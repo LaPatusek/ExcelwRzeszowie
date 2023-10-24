@@ -1,12 +1,5 @@
-import {
-  ArrowRight,
-  Call,
-  Copyright,
-  Facebook,
-  Instagram,
-} from 'iconsax-react';
+import { ArrowRight, Call, Copyright, Facebook } from 'iconsax-react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import Twitter from '../../Assets/twitterx.webp';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -61,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={` ${styles['third-wrap']} grid`}>
-          <div className={`${styles.socials} grid`}>
+          <div className={`${styles.socials}`}>
             <h3>Obserwuj nas na bieżąco</h3>
 
             <div className={`${styles['icons-container']} grid`}>
@@ -72,34 +65,6 @@ const Footer = () => {
                 rel='noreferrer'
               >
                 <Facebook size='34' color='white' className={styles.facebook} />
-              </a>
-
-              <a
-                href='https://www.instagram.com/eryk7777/'
-                aria-label='Instagram'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <Instagram
-                  size='34'
-                  color='white'
-                  className={styles.instagram}
-                />
-              </a>
-
-              <a
-                href='https://twitter.com/ErykTrojanowski'
-                aria-label='Twitter'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img
-                  src={Twitter}
-                  height='58px'
-                  width='58px'
-                  className={styles.twitter}
-                  alt='Twitter'
-                />
               </a>
 
               <a

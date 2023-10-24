@@ -1,9 +1,8 @@
 import emailjs from '@emailjs/browser';
-import { Call, Facebook, Instagram, TickSquare } from 'iconsax-react';
+import { Call, Facebook, TickSquare } from 'iconsax-react';
 import { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import Twitter from '../Assets/twitterx.webp';
 import useInput from '../Components/hooks/useInput';
 import styles from './Kontakt.module.css';
 
@@ -157,35 +156,6 @@ const Kontakt = () => {
               color='white'
               variant='Bold'
               className={styles.facebook}
-            />
-          </a>
-
-          <a
-            href='https://www.instagram.com/eryk7777/'
-            aria-label='Instagram'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <Instagram
-              size='34'
-              color='white'
-              variant='Bold'
-              className={styles.instagram}
-            />
-          </a>
-
-          <a
-            href='https://twitter.com/ErykTrojanowski'
-            aria-label='Twitter'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img
-              src={Twitter}
-              alt='Twitter'
-              width='34px'
-              height='34px'
-              className={styles.twitter}
             />
           </a>
 
